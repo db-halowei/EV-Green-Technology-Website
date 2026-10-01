@@ -130,8 +130,8 @@ This project demonstrates practical experience in:
 
 ## 📌 Project Context
 
-* **Project Type:** Green Technology Website\
-* **Theme:** Electric Vehicles & Sustainable Transportation\
-* **Development Focus:** Front-End Web Application\
-* **Technologies:** HTML5, CSS3, JavaScript, jQuery, Bootstrap\
+* **Project Type:** Green Technology Website
+* **Theme:** Electric Vehicles & Sustainable Transportation
+* **Development Focus:** Front-End Web Application
+* **Technologies:** HTML5, CSS3, JavaScript, jQuery, Bootstrap
 * **Target Platform:** Responsive Web Browsers
