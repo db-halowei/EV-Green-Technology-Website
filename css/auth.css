@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.auth-navbar {
+    background: #23d28b;
+    min-height: 70px;
+}
+
+.auth-navbar .navbar-brand {
+    font-size: 1.6rem;
+}
+
+
+/* =========================
+   AUTH SECTION
+   ========================= */
+
+.auth-section {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)),
+        url("../img/ev6.png");
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.auth-card {
+    width: 100%;
+    max-width: 470px;
+
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #23d28b;
+
+    color: white;
+
+    font-size: 1.5rem;
+}
+
+.auth-heading h1 {
+    margin-bottom: 10px;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+.auth-heading p {
+    margin: 0;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.form-label {
+    font-weight: 600;
+    color: #374151;
+}
+
+.input-group-text {
+    background: #f9fafb;
+    border-right: none;
+
+    color: #23d28b;
+}
+
+.form-control {
+    min-height: 48px;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.form-control:focus {
+    border-color: #23d28b;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(35, 210, 139, 0.18);
+}
+
+
+/* Password eye button */
+
+.password-toggle {
+    border: 1px solid #dee2e6;
+    background: white;
+
+    color: #6b7280;
+}
+
+.password-toggle:hover {
+    background: #f3f4f6;
+}
+
+
+/* Checkbox */
+
+.form-check-input:checked {
+    background-color: #23d28b;
+    border-color: #23d28b;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.auth-btn {
+    width: 100%;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 13px 20px;
+
+    background: #23d28b;
+
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(35, 210, 139, 0.35);
+}
+
+
+/* =========================
+   MESSAGE
+   ========================= */
+
+.auth-message {
+    display: none;
+
+    margin-bottom: 15px;
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+}
+
+.auth-message.success {
+    display: block;
+
+    background: #dcfce7;
+    color: #166534;
+}
+
+.auth-message.error {
+    display: block;
+
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================
+   LOGIN / SIGNUP LINK
+   ========================= */
+
+.auth-switch {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e5e7eb;
+
+    text-align: center;
+
+    color: #6b7280;
+}
+
+.auth-switch a {
+    color: #23d28b;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .auth-section {
+        padding: 30px 15px;
+    }
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .auth-heading h1 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* Account dropdown */
+.account-menu {
+    min-width: 150px;
+}
+
+.account-welcome {
+    display: block;
+
+    padding: 10px 15px;
+
+    color: #23d28b;
+
+    font-weight: 600;
+
+    background: white;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Account dropdown */
+.account-menu {
+    min-width: 210px;
+    padding: 8px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+    overflow: hidden;
+}
+
+
+/* Logged-in user area */
+.account-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    margin-left: 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* User icon */
+.user-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #23d28b;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+}
+
+
+/* Username */
+.user-name {
+    display: block;
+
+    color: #111827;
+    margin-left: 0;
+    padding-left: 0;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* Signed in text */
+.account-user small {
+    display: block;
+
+    color: #6b7280;
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+
+/* Logout */
+.account-menu .logout-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    margin-top: 5px;
+
+    color: #374151;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* Logout hover */
+.account-menu .logout-item:hover {
+    background: #f3f4f6;
+
+    color: #23d28b;
+}
