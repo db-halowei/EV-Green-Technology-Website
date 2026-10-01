@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EV vehicles</title>
+    <!-- Libraries Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+    <!-- Font Awesome for caret icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome 6 CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+
+<body>
+    <div class="navbar">
+
+        <h1>EVision</h1>
+
+        <div class="nav-menu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About EV</a>
+
+            <a href="types.html">EV Types</a>
+
+            <a href="charging.html">Charging</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="ev-vs-petrol.html">EV VS Petrol</a>
+
+            <a href="faq.html">FAQ</a>
+
+
+            <!-- Models Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Models
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="tesla.html">Tesla</a>
+                    <a href="proton.html">Proton</a>
+                    <a href="honda.html">Honda</a>
+                    <a href="byd.html">BYD</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Account Dropdown -->
+            <div class="dropdown account-dropdown">
+
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content account-menu">
+
+                    <!-- Before login -->
+                    <a href="login.html" id="loginLink">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html" id="signupLink">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+
+
+                    <!-- After login -->
+                    <div id="welcomeUser" class="account-user" style="display: none;">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span class="user-name" id="userName">
+                            </span>
+
+                            <small>Signed in</small>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" id="logoutLink" class="logout-item" style="display: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/ev1.jpg" alt="Drive into the FUTURE">
+            <div class="text">Drive into the FUTURE</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="img/ev2.jpg" alt="EV Vehicles">
+            <div class="text">Learn more about EV with EVision</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <!-- Explanation Section -->
+    <section class="explaination-container">
+        <div class="exp-header">
+            <h5 class="exp-subtitle">Things to know about EV</h5>
+            <h1 class="exp-title">What is an Electric Vehicle (EV)?</h1>
+        </div>
+        <div class="exp-content">
+            <div class="exp-img-box">
+                <img src="img/carbattery.jpeg" alt="Electric vehicle battery system">
+            </div>
+            <div class="exp-text-box">
+                <p>An electric vehicle (EV) is powered entirely or partially by electricity instead of gasoline or
+                    diesel. EVs utilize an electric motor, a battery system, and advanced electronics to provide
+                    propulsion. They have emerged as a viable solution for reducing greenhouse gas emissions and
+                    dependence on fossil fuels.</p>
+            </div>
+        </div>
+    </section>
+    <!-- YouTube Video Section -->
+    <section class="video-section">
+
+        <div class="video-header">
+            <h5>Learn More About EV</h5>
+            <h2>Watch How Electric Vehicles Work</h2>
+            <p>
+                Watch this video to better understand electric vehicle technology,
+                charging and how EVs differ from conventional vehicles.
+            </p>
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/4XChnjMjVt0" title="Electric Vehicle Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+    </section>
+
+
+    <!-- Benefits Section -->
+    <div class="benefits-header">
+        <h4>Why EV vehicles?</h4>
+        <h1>6 reasons why you must own an EV vehicle</h1>
+    </div>
+    <div class="benefits-container">
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa solid fa-wallet"></i>
+            </div>
+            <h2>Cost</h2>
+            <p> Electricity is generally more affordable in comparison to petrol or diesel, so each kilometer driven
+                costs less, hence EV vehicle owners are less affected by sudden spikes in global oil prices.</p>
+            <a href="benefits.html#cost-savings" class="card-btn">Read More</a>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa fa-leaf"></i>
+            </div>
+            <h2>Eco Friendly</h2>
+            <p>No tailpipe emissions is produced, helping reduce air pollution and greenhouse gases. Moreover, their
+                batteries can be recycled thus reducing waste pollution.</p>
+            <a href="benefits.html#eco-friendly" class="card-btn">Read More</a>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa fa-battery-full"></i>
+            </div>
+            <h2>Long Range</h2>
+            <p>Modern batteries give long driving ranges, letting drivers travel far without frequent charging and
+                making them reliable for day to day commutes.</p>
+            <a href="benefits.html#long-range" class="card-btn">Read More</a>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa fa-charging-station"></i>
+            </div>
+            <h2>Convenient Charging</h2>
+            <p> EVs can be charged anywhere whether charging it overnight at home or using public fast charging stations
+                is malls, highways and work places.</p>
+            <a href="benefits.html#charging-convenience" class="card-btn">Read More</a>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa fa-wrench"></i>
+            </div>
+            <h2>Lower Maintenance Cost</h2>
+            <p>They need less servicing, with no oil changes, fewer moving parts, and brakes that last longer, cutting
+                overall maintenance costs.</p>
+            <a href="benefits.html#lower-maintenance" class="card-btn">Read More</a>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <i class="fa fa-building-columns"></i>
+            </div>
+            <h2>Government Incentives</h2>
+            <p> Governments offer tax rebates, lower registration fees, and road tax or toll exemptions, reducing the
+                overall cost of ownership.</p>
+            <a href="benefits.html#government-incentives" class="card-btn">Read More</a>
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-col">
+                <h2 class="footer-brand">EVision</h2>
+                <p class="footer-desc">
+                    Driving towards a cleaner, sustainable future with modern electric vehicle insights and technology.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About EV</a></li>
+                    <li><a href="service.html">EV Types</a></li>
+                    <li><a href="charging.html">Charging</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="ev-vs-petrol.html">EV VS Petrol</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Top Models -->
+            <div class="footer-col">
+                <h3>Popular Models</h3>
+                <ul class="footer-links">
+                    <li><a href="tesla.html">Tesla</a></li>
+                    <li><a href="proton.html">Proton</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="byd.html">BYD</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> UTAR, Kampar</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (60) 123 4567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@evision.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

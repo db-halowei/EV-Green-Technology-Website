@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Charging Guidelines</title>
+
+    <!-- Libraries Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+    <!-- Font Awesome for caret icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome 6 CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <h1>EVision</h1>
+
+        <div class="nav-menu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About EV</a>
+
+            <a href="types.html">EV Types</a>
+
+            <a href="charging.html">Charging</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="ev-vs-petrol.html">EV VS Petrol</a>
+
+            <a href="faq.html">FAQ</a>
+
+
+            <!-- Models Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Models
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="tesla.html">Tesla</a>
+                    <a href="proton.html">Proton</a>
+                    <a href="honda.html">Honda</a>
+                    <a href="byd.html">BYD</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Account Dropdown -->
+            <div class="dropdown account-dropdown">
+
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content account-menu">
+
+                    <!-- Before login -->
+                    <a href="login.html" id="loginLink">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html" id="signupLink">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+
+
+                    <!-- After login -->
+                    <div id="welcomeUser" class="account-user" style="display: none;">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span class="user-name" id="userName">
+                            </span>
+
+                            <small>Signed in</small>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" id="logoutLink" class="logout-item" style="display: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Banner -->
+    <div class="banner-image-container">
+        <div class="banner-image fade">
+            <img src="img/charging.jpg" alt="Charging System">
+            <div class="banner-text">EV Charging Guidelines</div>
+        </div>
+    </div>
+
+    <!--Charging section-->
+    <section class="explaination-container">
+        <div class="exp-header">
+            <h5 class="exp-subtitle">All about EV charging</h5>
+            <h1 class="exp-title">4 Common Questions while Charging EV</h1>
+
+        </div>
+
+        <!--Question 1-->
+        <div class="exp-content">
+            <div class="exp-img-box">
+                <h4 class="charging-subtitle">1. How long does it take to charge an EV?</h4>
+                <img src="img/charging_img1.jpg" alt="EV Charging Image 1">
+            </div>
+            <div class="exp-text-box">
+                <ul>
+                    <li>
+                        <p><strong>Home Charging</strong></p>
+                        <p>
+                            The slowest charging option for an EV, typically taking more than 20 hours
+                            and often requiring an overnight charge.
+                        </p>
+                    </li>
+                    <li>
+                        <p><strong>Alternating Current (AC) Charging</strong></p>
+                        <P>
+                            Suitable used at homes, Workplaces, and public charging stations,
+                            usually take 5 to 6 hours.
+                        </P>
+                    </li>
+                    <li>
+                        <p><strong>Direct Current (DC) Fast Charging</strong></p>
+                        <p>
+                            The fastest option, which can charge an EV from around 20% to 80%
+                            in roughly 20 to 40 minutes.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 2 -->
+        <div class="exp-content">
+            <div class="exp-img-box">
+                <h4 class="charging-subtitle">2. What are the types of EV chargers?</h4>
+                <img src="img/charging_img2.jpg" alt="EV Charging Image 2">
+            </div>
+
+            <div class="exp-text-box">
+                <ul>
+                    <li>
+                        <p><strong>AC Charger</strong></p>
+                        <p>
+                            AC chargers are commonly used at homes, workplaces and public
+                            charging stations. They provide electricity to the EV's onboard
+                            charger, which converts AC power into DC power for the battery.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>DC Fast Charger</strong></p>
+                        <p>
+                            DC fast chargers supply DC electricity directly to the EV battery,
+                            allowing the vehicle to charge much faster than AC chargers.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>Portable Charger</strong></p>
+                        <p>
+                            Portable chargers are compact and convenient, allowing EV owners
+                            to charge their vehicles from suitable electrical outlets when
+                            needed.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 3 -->
+        <div class="exp-content">
+            <div class="exp-img-box">
+                <h4 class="charging-subtitle">3. What things affect charging speed?</h4>
+                <img src="img/charging_img3.jpg" alt="EV Charging Image 3">
+            </div>
+
+            <div class="exp-text-box">
+                <ul>
+                    <li>
+                        <p><strong>State of Charge</strong></p>
+                        <p>
+                            Batteries charge faster when they are very low, usually when it is below 10%.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>Temperature of Battery</strong></p>
+                        <p>
+                            Charging process will be very slow in extreme weather. Try to ensure the temperature of
+                            batteries
+                            is between 20°C and 35°C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>Battery Deterioration</strong></p>
+                        <p>
+                            Battery will deteriorate over time due to capacity loss. Thus, the charging speed will
+                            decrease after several years.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>Vehicle's Voltage and Current</strong></p>
+                        <p>
+                            The vehicle’s voltage and current determine its charging power, with higher voltage or
+                            current generally
+                            allowing the battery to charge faster.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <!-- Question 4 -->
+        <div class="exp-content">
+            <div class="exp-img-box">
+                <h4 class="charging-subtitle">4. How much does it cost to charge an EV?</h4>
+                <img src="img/charging_img4.jpg" alt="EV Charging Image 4">
+            </div>
+
+            <div class="exp-text-box">
+                <ul>
+                    <li>
+                        <p><strong>Home Charging</strong></p>
+                        <p>
+                            Charging at home using standard TNB tariffs costs around RM0.24 to
+                            RM0.44 per kWh, making a full charge cost around RM10 to RM20.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>Public AC Charging</strong></p>
+                        <p>
+                            Public AC chargers in malls or hotels usually cost between RM1.00 and
+                            RM1.15 per kWh, costing around RM40 for a standard top-up.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p><strong>Public DC Fast Charging</strong></p>
+                        <p>
+                            High-speed highway DC fast chargers cost between RM1.10 and
+                            RM1.80 per kWh, taking around 20 to 40 minutes for a charge.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-col">
+                <h2 class="footer-brand">EVision</h2>
+                <p class="footer-desc">
+                    Driving towards a cleaner, sustainable future with modern electric vehicle insights and technology.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About EV</a></li>
+                    <li><a href="service.html">EV Types</a></li>
+                    <li><a href="charging.html">Charging</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="ev-vs-petrol.html">EV VS Petrol</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Top Models -->
+            <div class="footer-col">
+                <h3>Popular Models</h3>
+                <ul class="footer-links">
+                    <li><a href="tesla.html">Tesla</a></li>
+                    <li><a href="proton.html">Proton</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="byd.html">BYD</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> UTAR, Kampar</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (60) 123 4567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@evision.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+</body>
+
+</html>

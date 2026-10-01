@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Frequently asked questions about electric vehicles, charging, batteries and costs.">
+    <title>EV FAQ | EVision</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+    <link href="css/ev-content-redesign.css" rel="stylesheet">
+</head>
+
+<body id="faqPage">
+    <div class="navbar">
+
+        <h1>EVision</h1>
+
+        <div class="nav-menu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About EV</a>
+
+            <a href="types.html">EV Types</a>
+
+            <a href="charging.html">Charging</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="ev-vs-petrol.html">EV VS Petrol</a>
+
+            <a href="faq.html">FAQ</a>
+
+
+            <!-- Models Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Models
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="tesla.html">Tesla</a>
+                    <a href="proton.html">Proton</a>
+                    <a href="honda.html">Honda</a>
+                    <a href="byd.html">BYD</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Account Dropdown -->
+            <div class="dropdown account-dropdown">
+
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content account-menu">
+
+                    <!-- Before login -->
+                    <a href="login.html" id="loginLink">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html" id="signupLink">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+
+
+                    <!-- After login -->
+                    <div id="welcomeUser" class="account-user" style="display: none;">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span class="user-name" id="userName">
+                            </span>
+
+                            <small>Signed in</small>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" id="logoutLink" class="logout-item" style="display: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <header class="ev-hero faq-hero">
+        <div class="container hero-content text-white">
+            <p class="content-kicker">Straightforward EV information</p>
+            <h1>EV Questions, Answered.</h1>
+            <p class="lead mb-0">Clear guidance about ownership, charging, batteries, costs and safety.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-search-section" aria-labelledby="faqHeading">
+            <div class="container">
+                <div class="faq-search-heading">
+                    <p class="content-kicker">Find an answer</p>
+                    <h2 id="faqHeading">What would you like to know?</h2>
+                    <p>Type a keyword or choose one category.</p>
+                </div>
+
+                <div class="faq-search-tools faq-command-card">
+                    <label class="form-label visually-hidden" for="faqSearch">Search questions and answers</label>
+                    <div class="input-group faq-search-input">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-magnifying-glass text-success" aria-hidden="true"></i>
+                        </span>
+                        <input class="form-control" id="faqSearch" type="search"
+                            placeholder="Example: battery, charging or rain" autocomplete="off">
+                    </div>
+
+                    <div class="faq-category-tabs" role="group" aria-label="FAQ categories">
+                        <button class="btn btn-outline-success category-filter is-selected" type="button"
+                            data-category="all" aria-pressed="true"><i class="fa-solid fa-border-all"
+                                aria-hidden="true"></i>All</button>
+                        <button class="btn btn-outline-success category-filter" type="button" data-category="general"
+                            aria-pressed="false"><i class="fa-regular fa-lightbulb"
+                                aria-hidden="true"></i>General</button>
+                        <button class="btn btn-outline-success category-filter" type="button" data-category="charging"
+                            aria-pressed="false"><i class="fa-solid fa-plug" aria-hidden="true"></i>Charging</button>
+                        <button class="btn btn-outline-success category-filter" type="button" data-category="battery"
+                            aria-pressed="false"><i class="fa-solid fa-battery-three-quarters"
+                                aria-hidden="true"></i>Battery</button>
+                        <button class="btn btn-outline-success category-filter" type="button" data-category="cost"
+                            aria-pressed="false"><i class="fa-solid fa-coins" aria-hidden="true"></i>Cost</button>
+                        <button class="btn btn-outline-success category-filter" type="button" data-category="safety"
+                            aria-pressed="false"><i class="fa-solid fa-shield-halved"
+                                aria-hidden="true"></i>Safety</button>
+                    </div>
+
+                    <p class="faq-result-count" id="faqResultCount" aria-live="polite">
+                        10 of 10 questions shown
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-reading-section" aria-label="Electric vehicle questions">
+            <div class="container">
+                <div class="faq-empty-state d-none" id="faqEmptyState">
+                    <i class="fa-regular fa-face-frown fa-2x text-success mb-3" aria-hidden="true"></i>
+                    <h2 class="h4">No matching questions</h2>
+                    <p class="mb-0">Try a different keyword or select All.</p>
+                </div>
+
+                <div class="accordion faq-accordion" id="faqAccordion">
+                    <article class="accordion-item faq-item" data-category="general">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="faq-question-icon"><i class="fa-solid fa-car-side"
+                                        aria-hidden="true"></i></span>
+                                What is an electric vehicle?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                An electric vehicle uses one or more electric motors. A battery electric vehicle runs
+                                entirely on electricity, while some other EV types combine electricity with fuel.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="general">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="faq-question-icon"><i class="fa-solid fa-route"
+                                        aria-hidden="true"></i></span>
+                                How far can an EV travel on one charge?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Range depends on the model, battery size, speed, weather and driving style. Many modern
+                                EVs can cover normal daily travel comfortably, but buyers should check official and
+                                real-world range information for the model they are considering.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="charging">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="faq-question-icon"><i class="fa-solid fa-clock"
+                                        aria-hidden="true"></i></span>
+                                How long does EV charging take?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Charging time depends on the charger and battery. A home AC charger normally takes
+                                several hours, while a compatible DC fast charger can add a large amount of range in
+                                around 30 to 60 minutes.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="charging">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class="faq-question-icon"><i class="fa-solid fa-house-chimney"
+                                        aria-hidden="true"></i></span>
+                                Can I charge an EV at home?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Yes, if the property has a suitable electrical supply and installation. A qualified
+                                installer should inspect the site and install the correct home charging equipment.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="battery">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span class="faq-question-icon"><i class="fa-solid fa-battery-full"
+                                        aria-hidden="true"></i></span>
+                                How long does an EV battery last?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                EV batteries gradually lose capacity rather than suddenly stopping. Battery life varies
+                                with age, heat, charging habits and usage, so owners should also review the
+                                manufacturer's
+                                battery warranty.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="battery">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <span class="faq-question-icon"><i class="fa-solid fa-recycle"
+                                        aria-hidden="true"></i></span>
+                                Can EV batteries be recycled?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseSix" aria-labelledby="headingSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Battery materials can be recovered through specialised recycling. Some used vehicle
+                                batteries may also have a second life in stationary energy storage before recycling.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="cost">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <span class="faq-question-icon"><i class="fa-solid fa-wallet"
+                                        aria-hidden="true"></i></span>
+                                Are EVs cheaper to run than petrol cars?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseSeven" aria-labelledby="headingSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Electricity can cost less per kilometre than petrol, and EVs have fewer routine
+                                powertrain service items. The actual saving depends on tariffs, fuel prices, efficiency
+                                and driving distance. Use the EVision calculator for a simple estimate.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="cost">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <span class="faq-question-icon"><i class="fa-solid fa-receipt"
+                                        aria-hidden="true"></i></span>
+                                What other EV costs should I consider?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseEight" aria-labelledby="headingEight"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Consider purchase price, insurance, home charger installation, public charging rates,
+                                tyres, financing and resale value. Compare total ownership cost, not only energy cost.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="safety">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <span class="faq-question-icon"><i class="fa-solid fa-cloud-rain"
+                                        aria-hidden="true"></i></span>
+                                Is it safe to drive or charge an EV in the rain?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseNine" aria-labelledby="headingNine"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                EV electrical systems and charging connectors are designed with weather protection and
+                                safety checks. Use approved equipment, follow the manufacturer's instructions and do
+                                not use damaged charging cables.
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item faq-item" data-category="safety">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                <span class="faq-question-icon"><i class="fa-solid fa-triangle-exclamation"
+                                        aria-hidden="true"></i></span>
+                                What should I do after an EV accident?
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseTen" aria-labelledby="headingTen"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-answer">
+                                Follow normal emergency procedures, move to a safe location if possible, contact the
+                                emergency services and tell responders that the vehicle is electric. Do not touch
+                                exposed high-voltage parts or a visibly damaged battery.
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey-weather-section" aria-labelledby="weatherHeading">
+            <div class="container">
+                <div class="weather-layout">
+                    <div class="weather-copy">
+                        <p class="content-kicker">Journey conditions</p>
+                        <h2 id="weatherHeading">Plan with Kuala Lumpur weather in view.</h2>
+                        <p>
+                            Heat, rain and wind can influence cabin comfort, traffic and energy use. Check the current
+                            conditions before setting off on your next electric journey.
+                        </p>
+                        <p class="weather-source">
+                            Live conditions from <a href="https://open-meteo.com/en/docs" target="_blank"
+                                rel="noopener noreferrer">Open-Meteo documentation</a>
+                        </p>
+                    </div>
+
+                    <div class="weather-dashboard">
+                        <div id="weatherLoading" class="text-center py-4">
+                            <div class="spinner-border text-success" role="status">
+                                <span class="visually-hidden">Loading weather</span>
+                            </div>
+                            <p class="mt-3 mb-0">Loading current weather...</p>
+                        </div>
+
+                        <div class="d-none" id="weatherContent">
+                            <div class="weather-primary d-flex align-items-center justify-content-between gap-3 mb-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <span class="weather-icon-wrap"><i class="fa-solid fa-cloud-sun weather-icon"
+                                            aria-hidden="true"></i></span>
+                                    <div>
+                                        <p class="small mb-1">Current conditions</p>
+                                        <h3 class="h4 mb-0" id="weatherCondition">—</h3>
+                                    </div>
+                                </div>
+                                <strong class="weather-temperature-feature" id="weatherTemperature">—</strong>
+                            </div>
+                            <div class="row g-3 weather-values">
+                                <div class="col-12 col-sm-4">
+                                    <div class="weather-metric">
+                                        <i class="fa-solid fa-temperature-half" aria-hidden="true"></i><span>Feels
+                                            like</span>
+                                        <strong id="weatherFeelsLike">—</strong>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="weather-metric">
+                                        <i class="fa-solid fa-droplet" aria-hidden="true"></i><span>Rain</span>
+                                        <strong id="weatherPrecipitation">—</strong>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="weather-metric">
+                                        <i class="fa-solid fa-wind" aria-hidden="true"></i><span>Wind</span>
+                                        <strong id="weatherWind">—</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning d-none mb-0" id="weatherError" role="alert">
+                            <p class="mb-2">Weather data could not be loaded. Check your connection and try again.</p>
+                            <button class="btn btn-sm btn-outline-dark" id="retryWeather" type="button">Try
+                                again</button>
+                        </div>
+                        <p class="small mt-3 mb-0" id="weatherStatus" aria-live="polite"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-next-step" aria-labelledby="calculatorLinkHeading">
+            <div class="container content-next-step-inner">
+                <div>
+                    <p class="content-kicker">Compare the costs</p>
+                    <h2 id="calculatorLinkHeading">Want to compare EV and petrol running costs?</h2>
+                    <p>Use the EVision estimator to compare monthly energy costs in RM.</p>
+                </div>
+                <a class="content-primary-action" href="ev-vs-petrol.html">Try EV vs Petrol <i
+                        class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-col">
+                <h2 class="footer-brand">EVision</h2>
+                <p class="footer-desc">
+                    Driving towards a cleaner, sustainable future with modern electric vehicle insights and technology.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About EV</a></li>
+                    <li><a href="service.html">EV Types</a></li>
+                    <li><a href="charging.html">Charging</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="ev-vs-petrol.html">EV VS Petrol</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Top Models -->
+            <div class="footer-col">
+                <h3>Popular Models</h3>
+                <ul class="footer-links">
+                    <li><a href="tesla.html">Tesla</a></li>
+                    <li><a href="proton.html">Proton</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="byd.html">BYD</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> UTAR, Kampar</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (60) 123 4567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@evision.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="faq.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

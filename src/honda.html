@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Brand: Honda</title>
+
+    <!-- Libraries Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+    <!-- Font Awesome for caret icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome 6 CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <h1>EVision</h1>
+
+        <div class="nav-menu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About EV</a>
+
+            <a href="types.html">EV Types</a>
+
+            <a href="charging.html">Charging</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="ev-vs-petrol.html">EV VS Petrol</a>
+
+            <a href="faq.html">FAQ</a>
+
+
+            <!-- Models Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Models
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="tesla.html">Tesla</a>
+                    <a href="proton.html">Proton</a>
+                    <a href="honda.html">Honda</a>
+                    <a href="byd.html">BYD</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Account Dropdown -->
+            <div class="dropdown account-dropdown">
+
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content account-menu">
+
+                    <!-- Before login -->
+                    <a href="login.html" id="loginLink">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html" id="signupLink">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+
+
+                    <!-- After login -->
+                    <div id="welcomeUser" class="account-user" style="display: none;">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span class="user-name" id="userName">
+                            </span>
+
+                            <small>Signed in</small>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" id="logoutLink" class="logout-item" style="display: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Banner -->
+    <div class="banner-image-container">
+        <div class="banner-image fade">
+            <img src="img/honda-logo.jpg" alt="Honda Background Image">
+        </div>
+    </div>
+
+    <!-- Brand: Honda -->
+    <section class="explanation-container">
+        <div class="exp-header">
+            <h5 class="exp-subtitle">All about Honda</h5>
+            <h1 class="exp-title">Honda Background</h1>
+
+        </div>
+        <div class="exp-content">
+            <div class="exp-text-box">
+                <div class="brand-img-box">
+                    <img src="img/honda.jpg" alt="Honda Image">
+                    <br>
+                </div>
+                <p> Honda Motor Co., Ltd. is a Japanese automotive company founded by Soichiro Honda in
+                    September 1948 in Hamamatsu, Japan. The company initially focused on producing
+                    motorcycles and later expanded into automobiles and power products. Honda entered
+                    the automobile industry in the 1960s and gradually expanded its manufacturing and
+                    business operations around the world. Today, Honda is known for developing
+                    motorcycles, automobiles, and various power products while continuing to invest in
+                    new technologies. As the automotive industry moves toward electrification, Honda is
+                    also developing electric and other electrified vehicles as part of its future mobility
+                    strategy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components 3x3 Grid Section -->
+    <section class="components-container">
+        <div class="components-header">
+            <h1 class="components-title">Honda Electric Car Model</h1>
+        </div>
+
+        <div class="components-grid">
+            <!-- Model 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/honda-eN1.jpg" alt="Honda eN1">
+                        <h3>e:N1</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Type: Sport Utility Vehicle (SUV)</p>
+                        <p>Colours: White, Aqua, Grey</p>
+                        <p>Price: ~ RM 149,900</p>
+                        <p>Main Focus: High Tech and Daily Driving</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/honda-prologue.jpg" alt="Honda Prologue">
+                        <h3>Prologue</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Type: Sport Utility Vehicle (SUV)</p>
+                        <p>Colours: North Shore, White, Radiant Red</p>
+                        <p>Price: ~ RM 190,000</p>
+                        <p>Main Focus: Spaciousness, Long-term Driving</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/honda-e.jpg" alt="Honda e">
+                        <h3>Honda e</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Type: Compact Hatchback</p>
+                        <p>Colours: White, Silver, Crystal Blue</p>
+                        <p>Price: ~ RM 150,000</p>
+                        <p>Main Focus: Compact Design and City Driving</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-col">
+                <h2 class="footer-brand">EVision</h2>
+                <p class="footer-desc">
+                    Driving towards a cleaner, sustainable future with modern electric vehicle insights and technology.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About EV</a></li>
+                    <li><a href="service.html">EV Types</a></li>
+                    <li><a href="charging.html">Charging</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="ev-vs-petrol.html">EV VS Petrol</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Top Models -->
+            <div class="footer-col">
+                <h3>Popular Models</h3>
+                <ul class="footer-links">
+                    <li><a href="tesla.html">Tesla</a></li>
+                    <li><a href="proton.html">Proton</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="byd.html">BYD</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> UTAR, Kampar</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (60) 123 4567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@evision.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+</body>
+
+
+</html>

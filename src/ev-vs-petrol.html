@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Compare electric and petrol vehicle running costs in Malaysia.">
+    <title>EV vs Petrol | EVision</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="css/ev-content-redesign.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+</head>
+
+<body id="evComparisonPage">
+    <div class="navbar">
+
+        <h1>EVision</h1>
+
+        <div class="nav-menu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About EV</a>
+
+            <a href="types.html">EV Types</a>
+
+            <a href="charging.html">Charging</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="ev-vs-petrol.html">EV VS Petrol</a>
+
+            <a href="faq.html">FAQ</a>
+
+
+            <!-- Models Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Models
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="tesla.html">Tesla</a>
+                    <a href="proton.html">Proton</a>
+                    <a href="honda.html">Honda</a>
+                    <a href="byd.html">BYD</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Account Dropdown -->
+            <div class="dropdown account-dropdown">
+
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content account-menu">
+
+                    <!-- Before login -->
+                    <a href="login.html" id="loginLink">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html" id="signupLink">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+
+
+                    <!-- After login -->
+                    <div id="welcomeUser" class="account-user" style="display: none;">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span class="user-name" id="userName">
+                            </span>
+
+                            <small>Signed in</small>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" id="logoutLink" class="logout-item" style="display: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <header class="ev-hero ev-comparison-hero">
+        <div class="container hero-content text-white">
+            <p class="content-kicker">EV or petrol?</p>
+            <h1>Compare what matters for everyday driving.</h1>
+            <p class="lead mb-0">See the practical differences, then estimate your monthly energy costs in Malaysian
+                Ringgit.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="personalisation-strip" aria-labelledby="visitorHeading">
+            <div class="container personalisation-layout">
+                <div class="personalisation-copy">
+                    <p class="content-kicker">Personalise your visit</p>
+                    <h2 id="visitorHeading">Make the estimate yours.</h2>
+                    <p id="visitorMessage">Enter your name and EVision will remember you for 30 days.</p>
+                    <p id="cookieStatus" aria-live="polite"></p>
+                </div>
+                <div class="personalisation-form">
+                    <label for="visitorName">Your name</label>
+                    <div class="personalisation-controls">
+                        <input id="visitorName" type="text" maxlength="30" autocomplete="name"
+                            placeholder="Example: Aina">
+                        <button class="content-primary-action" id="saveVisitorName" type="button">Remember me</button>
+                        <button class="content-text-action" id="forgetVisitorName" type="button">Forget</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vehicle-comparison-section" aria-labelledby="comparisonHeading">
+            <div class="container content-section-heading">
+                <p class="content-kicker">Electric and petrol compared</p>
+                <h2 id="comparisonHeading">Two ways to power the same journey.</h2>
+                <p>Compare everyday ownership before looking at the detailed specifications below.</p>
+            </div>
+
+            <div class="comparison-band comparison-summary">
+                <article class="comparison-panel electric-panel">
+                    <div class="comparison-panel-inner">
+                        <span class="comparison-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
+                        <p class="comparison-type">Electric</p>
+                        <h3>Efficient, quiet and ready to charge at home.</h3>
+                        <p>Electric power offers smooth response with fewer routine powertrain service items.</p>
+                        <ul class="comparison-points" aria-label="Electric vehicle highlights">
+                            <li><i class="fa-solid fa-coins" aria-hidden="true"></i>Lower energy cost</li>
+                            <li><i class="fa-solid fa-house-chimney" aria-hidden="true"></i>Home charging</li>
+                            <li><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>Fewer powertrain
+                                maintenance items</li>
+                            <li><i class="fa-solid fa-leaf" aria-hidden="true"></i>No tailpipe emissions</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="comparison-panel petrol-panel">
+                    <div class="comparison-panel-inner">
+                        <span class="comparison-icon" aria-hidden="true"><i class="fa-solid fa-gas-pump"></i></span>
+                        <p class="comparison-type">Petrol</p>
+                        <h3>Familiar, flexible and quick to refuel.</h3>
+                        <p>Petrol vehicles use an established nationwide network and familiar servicing support.</p>
+                        <ul class="comparison-points" aria-label="Petrol vehicle highlights">
+                            <li><i class="fa-solid fa-stopwatch" aria-hidden="true"></i>Fast refuelling</li>
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Widespread fuel stations</li>
+                            <li><i class="fa-solid fa-road" aria-hidden="true"></i>Convenient long-distance travel</li>
+                            <li><i class="fa-solid fa-wrench" aria-hidden="true"></i>Familiar servicing infrastructure
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container specification-section">
+                <div class="specification-heading">
+                    <p class="content-kicker">Detailed comparison</p>
+                    <h3>Practical differences at a glance.</h3>
+                </div>
+                <div class="specification-table-wrap table-responsive">
+                    <table class="comparison-table">
+                        <caption class="visually-hidden">Comparison between electric and petrol vehicles.</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Factor</th>
+                                <th scope="col">Electric</th>
+                                <th scope="col">Petrol</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Energy</th>
+                                <td>Electricity stored in a battery</td>
+                                <td>Petrol burned by an engine</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Running cost</th>
+                                <td>Often lower per kilometre</td>
+                                <td>Depends heavily on fuel price</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Maintenance</th>
+                                <td>Fewer moving powertrain parts</td>
+                                <td>Engine oil and more mechanical parts</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tailpipe emissions</th>
+                                <td>No tailpipe exhaust while driving</td>
+                                <td>Produces exhaust emissions</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Long journeys</th>
+                                <td>Charging stops may require planning</td>
+                                <td>Fuel stations are widely available</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Refill at home</th>
+                                <td>Possible with suitable home charging</td>
+                                <td>Normally requires a fuel station</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="cost-calculator-section" aria-labelledby="calculatorHeading">
+            <div class="container">
+                <div class="calculator-heading">
+                    <p class="content-kicker">Running cost estimator</p>
+                    <h2 id="calculatorHeading">Estimate your monthly energy cost.</h2>
+                    <p>Adjust the example values to reflect your own driving and local energy prices.</p>
+                </div>
+
+                <div class="calculator-layout estimator-shell">
+                    <form class="cost-calculator-form" id="comparisonForm" novalidate>
+                        <div class="calculator-form-heading">
+                            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+                            <div>
+                                <h3>Build your estimate</h3>
+                                <p>Use your typical monthly driving and current energy prices.</p>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label" for="distance"><i class="fa-solid fa-road field-icon"
+                                        aria-hidden="true"></i>Monthly driving distance (km)</label>
+                                <input class="form-control calculator-input" id="distance" name="distance" type="number"
+                                    min="1" step="1" value="1500" aria-describedby="distanceFeedback" required>
+                                <div class="invalid-feedback" id="distanceFeedback">Enter a number greater than 0.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="evEfficiency"><i class="fa-solid fa-bolt field-icon"
+                                        aria-hidden="true"></i>EV efficiency (kWh/100 km)</label>
+                                <input class="form-control calculator-input" id="evEfficiency" name="evEfficiency"
+                                    type="number" min="0.1" step="0.1" value="15"
+                                    aria-describedby="evEfficiencyFeedback" required>
+                                <div class="invalid-feedback" id="evEfficiencyFeedback">Enter a number greater than 0.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="electricityRate"><i class="fa-solid fa-plug field-icon"
+                                        aria-hidden="true"></i>Electricity price (RM/kWh)</label>
+                                <input class="form-control calculator-input" id="electricityRate" name="electricityRate"
+                                    type="number" min="0.01" step="0.01" value="0.57"
+                                    aria-describedby="electricityRateFeedback" required>
+                                <div class="invalid-feedback" id="electricityRateFeedback">Enter a number greater than
+                                    0.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="petrolEfficiency"><i class="fa-solid fa-gauge field-icon"
+                                        aria-hidden="true"></i>Petrol use (L/100 km)</label>
+                                <input class="form-control calculator-input" id="petrolEfficiency"
+                                    name="petrolEfficiency" type="number" min="0.1" step="0.1" value="7"
+                                    aria-describedby="petrolEfficiencyFeedback" required>
+                                <div class="invalid-feedback" id="petrolEfficiencyFeedback">Enter a number greater than
+                                    0.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="petrolPrice"><i class="fa-solid fa-gas-pump field-icon"
+                                        aria-hidden="true"></i>Petrol price (RM/L)</label>
+                                <input class="form-control calculator-input" id="petrolPrice" name="petrolPrice"
+                                    type="number" min="0.01" step="0.01" value="2.05"
+                                    aria-describedby="petrolPriceFeedback" required>
+                                <div class="invalid-feedback" id="petrolPriceFeedback">Enter a number greater than 0.
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="calculator-note mt-4 mb-2">
+                            <i class="fa-regular fa-clock me-2" aria-hidden="true"></i>
+                            Your inputs stay with you during this visit.
+                        </p>
+                        <p class="small mb-3" id="draftStatus" aria-live="polite"></p>
+                        <p class="text-danger small mb-3" id="calculatorStatus" aria-live="polite"></p>
+
+                        <div class="calculator-actions">
+                            <button class="content-primary-action" type="submit">
+                                <i class="fa-solid fa-calculator me-2" aria-hidden="true"></i>Calculate costs
+                            </button>
+                            <button class="content-secondary-action" id="resetCalculator" type="button">
+                                Reset calculator
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="cost-result-panel savings-dashboard d-none" id="calculationResult" aria-live="polite">
+                        <span class="result-kicker"><i class="fa-solid fa-chart-line me-2" aria-hidden="true"></i>Your
+                            latest estimate</span>
+                        <h3>The cost difference</h3>
+                        <p class="result-support" id="storageStatus">
+                            Your latest completed calculation is saved on this device.
+                        </p>
+
+                        <dl class="result-list">
+                            <div class="monthly-saving">
+                                <dt id="monthlyDifferenceLabel">Monthly savings</dt>
+                                <dd id="monthlyDifferenceResult">RM 0.00</dd>
+                            </div>
+                            <div class="annual-saving">
+                                <dt id="annualDifferenceLabel">Annual savings</dt>
+                                <dd id="annualDifferenceResult">RM 0.00</dd>
+                            </div>
+                            <div class="supporting-costs">
+                                <div>
+                                    <dt>Monthly EV cost</dt>
+                                    <dd id="evMonthlyResult">RM 0.00</dd>
+                                </div>
+                                <div>
+                                    <dt>Monthly petrol cost</dt>
+                                    <dd id="petrolMonthlyResult">RM 0.00</dd>
+                                </div>
+                            </div>
+                        </dl>
+                        <p class="result-disclaimer">
+                            <i class="fa-solid fa-circle-info me-2" aria-hidden="true"></i>
+                            Energy-cost estimate only. Insurance, servicing, charging losses and purchase price are
+                            excluded.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-next-step" aria-labelledby="faqLinkHeading">
+            <div class="container content-next-step-inner">
+                <div>
+                    <p class="content-kicker">Continue learning</p>
+                    <h2 id="faqLinkHeading">Still have questions about EVs?</h2>
+                    <p>Read straightforward answers about charging, batteries, cost and safety.</p>
+                </div>
+                <a class="content-primary-action" href="faq.html">Visit the EV FAQ <i class="fa-solid fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-col">
+                <h2 class="footer-brand">EVision</h2>
+                <p class="footer-desc">
+                    Driving towards a cleaner, sustainable future with modern electric vehicle insights and technology.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About EV</a></li>
+                    <li><a href="service.html">EV Types</a></li>
+                    <li><a href="charging.html">Charging</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="ev-vs-petrol.html">EV VS Petrol</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Top Models -->
+            <div class="footer-col">
+                <h3>Popular Models</h3>
+                <ul class="footer-links">
+                    <li><a href="tesla.html">Tesla</a></li>
+                    <li><a href="proton.html">Proton</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="byd.html">BYD</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> UTAR, Kampar</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (60) 123 4567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@evision.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ev-vs-petrol.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
