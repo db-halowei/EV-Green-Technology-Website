@@ -1,0 +1,939 @@
+#evComparisonPage>.ev-hero,
+#faqPage>.ev-hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#evComparisonPage>.ev-comparison-hero {
+    background-image: url("../img/ev6.png");
+}
+
+#faqPage>.ev-hero {
+    background-image: url("../img/ev7.png");
+}
+
+#evComparisonPage>.ev-hero::before,
+#faqPage>.ev-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(0, 0, 0, 0.25) 45%,
+            rgba(0, 0, 0, 0.72) 100%);
+
+}
+
+#evComparisonPage>.ev-hero .hero-content,
+#faqPage>.ev-hero .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+#evComparisonPage>.ev-hero h1,
+#faqPage>.ev-hero h1 {
+    max-width: 760px;
+    margin: 0 0 1.1rem;
+    font-size: clamp(2.5rem, 5vw, 4.35rem);
+    font-weight: bold;
+    line-height: 1.04;
+    letter-spacing: -0.045em;
+}
+
+#evComparisonPage>.ev-hero .lead,
+#faqPage>.ev-hero .lead {
+    max-width: 660px;
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    line-height: 1.7;
+}
+
+#evComparisonPage>main,
+#faqPage>main {
+    color: #26302d;
+    background: #fff;
+    font-size: 1rem;
+}
+
+#evComparisonPage>main .content-kicker,
+#faqPage>main .content-kicker,
+#evComparisonPage>.ev-hero .content-kicker,
+#faqPage>.ev-hero .content-kicker {
+    margin: 0 0 0.8rem;
+    color: #23d28b;
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+#evComparisonPage>main h2,
+#faqPage>main h2 {
+    color: #17211e;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+#evComparisonPage>main p,
+#faqPage>main p {
+    line-height: 1.7;
+}
+
+#evComparisonPage>main .personalisation-strip {
+    border-bottom: 1px solid #dce4e1;
+    background: #f5f8f7;
+}
+
+#evComparisonPage>main .personalisation-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
+    gap: 3rem;
+    align-items: center;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+#evComparisonPage>main .personalisation-copy h2 {
+    margin: 0 0 0.45rem;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+#evComparisonPage>main .personalisation-copy p,
+#evComparisonPage>main .personalisation-form label {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+#evComparisonPage>main .personalisation-controls {
+    display: flex;
+    gap: 0.65rem;
+}
+
+#evComparisonPage>main .personalisation-controls input {
+    min-width: 0;
+    flex: 1;
+    min-height: 46px;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #bdcbc6;
+    border-radius: 4px;
+    font: inherit;
+}
+
+#evComparisonPage>main .content-primary-action,
+#faqPage>main .content-primary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 46px;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #23d28b;
+    border-radius: 4px;
+    color: #10231d;
+    background: #23d28b;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+#evComparisonPage>main .content-primary-action:hover,
+#faqPage>main .content-primary-action:hover {
+    border-color: #4be2a4;
+    background: #4be2a4;
+    transform: translateY(-1px);
+}
+
+#evComparisonPage>main .content-text-action {
+    border: 0;
+    color: #53605c;
+    background: transparent;
+    font-size: 0.92rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#evComparisonPage>main .vehicle-comparison-section {
+    padding: 4.5rem 0;
+}
+
+#evComparisonPage>main .content-section-heading {
+    max-width: 1180px;
+    margin-bottom: 2.5rem;
+}
+
+#evComparisonPage>main .content-section-heading h2 {
+    max-width: 700px;
+}
+
+#evComparisonPage>main .content-section-heading>p:last-child {
+    max-width: 620px;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+#evComparisonPage>main .comparison-band {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+}
+
+#evComparisonPage>main .comparison-panel {
+    min-width: 0;
+    padding: 4rem max(2rem, calc((100vw - 1180px) / 2));
+}
+
+#evComparisonPage>main .electric-panel {
+    color: #edf8f4;
+    background: #16342b;
+}
+
+#evComparisonPage>main .petrol-panel {
+    color: #e9eceb;
+    background: #252b29;
+}
+
+#evComparisonPage>main .comparison-panel-inner {
+    max-width: 500px;
+}
+
+#evComparisonPage>main .comparison-icon {
+    display: inline-grid;
+    width: 46px;
+    height: 46px;
+    margin-bottom: 1.6rem;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 50%;
+    color: #23d28b;
+}
+
+#evComparisonPage>main .comparison-type {
+    margin-bottom: 0.55rem;
+    color: #23d28b;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+#evComparisonPage>main .comparison-panel h3 {
+    max-width: 470px;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: clamp(1.65rem, 2.5vw, 2.25rem);
+    line-height: 1.18;
+}
+
+#evComparisonPage>main .comparison-panel>p,
+#evComparisonPage>main .comparison-panel-inner>p:not(.comparison-type) {
+    max-width: 500px;
+    color: #d3dcda;
+    font-size: 1rem;
+}
+
+#evComparisonPage>main .comparison-points {
+    display: grid;
+    gap: 0;
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+#evComparisonPage>main .comparison-points li {
+    display: flex;
+    gap: 0.85rem;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    font-size: 1rem;
+}
+
+#evComparisonPage>main .comparison-points i {
+    width: 1.2rem;
+    color: #23d28b;
+    text-align: center;
+}
+
+#evComparisonPage>main .specification-section {
+    max-width: 1180px;
+    padding-top: 4rem;
+}
+
+#evComparisonPage>main .specification-heading {
+    margin-bottom: 1.5rem;
+}
+
+#evComparisonPage>main .specification-heading h3 {
+    font-size: clamp(1.55rem, 2.4vw, 2.1rem);
+}
+
+#evComparisonPage>main .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.98rem;
+}
+
+#evComparisonPage>main .comparison-table th,
+#evComparisonPage>main .comparison-table td {
+    padding: 1.15rem 1rem;
+    border-bottom: 1px solid #dce4e1;
+    vertical-align: top;
+}
+
+#evComparisonPage>main .comparison-table thead th {
+    border-top: 2px solid #1f2a27;
+    color: #17211e;
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#evComparisonPage>main .comparison-table tbody th {
+    width: 25%;
+    color: #17211e;
+}
+
+#evComparisonPage>main .cost-calculator-section {
+    padding: 4.5rem 0;
+    color: #d9e2df;
+    background: #111917;
+}
+
+#evComparisonPage>main .calculator-heading {
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+}
+
+#evComparisonPage>main .calculator-heading h2 {
+    color: #fff;
+}
+
+#evComparisonPage>main .calculator-heading>p:last-child {
+    font-size: 1.05rem;
+}
+
+#evComparisonPage>main .calculator-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(370px, 0.9fr);
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: start;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#evComparisonPage>main .cost-calculator-form {
+    min-width: 0;
+}
+
+#evComparisonPage>main .calculator-form-heading {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.8rem;
+}
+
+#evComparisonPage>main .calculator-form-heading>i {
+    margin-top: 0.25rem;
+    color: #23d28b;
+    font-size: 1.35rem;
+}
+
+#evComparisonPage>main .calculator-form-heading h3 {
+    margin: 0 0 0.3rem;
+    color: #fff;
+    font-size: 1.35rem;
+}
+
+#evComparisonPage>main .calculator-form-heading p {
+    margin: 0;
+}
+
+#evComparisonPage>main .cost-calculator-form .form-label {
+    margin-bottom: 0.55rem;
+    color: #f3f7f5;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+#evComparisonPage>main .cost-calculator-form .field-icon {
+    width: 1.25rem;
+    margin-right: 0.4rem;
+    color: #23d28b;
+}
+
+#evComparisonPage>main .cost-calculator-form .form-control {
+    min-height: 50px;
+    border: 1px solid #52605b;
+    border-radius: 4px;
+    color: #fff;
+    background: #1b2522;
+    font-size: 1rem;
+}
+
+#evComparisonPage>main .cost-calculator-form .form-control:focus {
+    border-color: #23d28b;
+    box-shadow: 0 0 0 0.2rem rgba(35, 210, 139, 0.2);
+}
+
+#evComparisonPage>main .calculator-note,
+#evComparisonPage>main #draftStatus {
+    color: #aebbb7;
+    font-size: 0.9rem;
+}
+
+#evComparisonPage>main .calculator-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+#evComparisonPage>main .content-secondary-action {
+    min-height: 46px;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #64706c;
+    border-radius: 4px;
+    color: #edf3f1;
+    background: transparent;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+#evComparisonPage>main .cost-result-panel {
+    padding-left: clamp(2rem, 4vw, 4rem);
+    border-left: 1px solid #3a4743;
+    border: 0 !important;
+    border-left: 1px solid #3a4743 !important;
+    border-radius: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+#evComparisonPage>main .result-kicker {
+    color: #23d28b;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#evComparisonPage>main .cost-result-panel h3 {
+    margin: 0.8rem 0 0.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#evComparisonPage>main .result-support {
+    margin-bottom: 2rem;
+    color: #aebbb7;
+    font-size: 0.92rem;
+}
+
+#evComparisonPage>main .result-list {
+    display: block;
+    margin: 0;
+}
+
+#evComparisonPage>main .monthly-saving,
+#evComparisonPage>main .annual-saving {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #394541;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#evComparisonPage>main .result-list>div {
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-bottom: 1px solid #394541;
+    border-radius: 0;
+    background: transparent;
+}
+
+#evComparisonPage>main .monthly-saving dt,
+#evComparisonPage>main .annual-saving dt,
+#evComparisonPage>main .supporting-costs dt {
+    color: #b8c4c0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#evComparisonPage>main .monthly-saving dd {
+    margin: 0.15rem 0 0;
+    color: #23d28b;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.055em;
+}
+
+#evComparisonPage>main .annual-saving dd {
+    margin: 0.2rem 0 0;
+    color: #fff;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 650;
+}
+
+#evComparisonPage>main .supporting-costs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1.3rem 0;
+}
+
+#evComparisonPage>main .supporting-costs dd {
+    margin: 0.25rem 0 0;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 650;
+}
+
+#evComparisonPage>main .result-disclaimer {
+    margin: 0.5rem 0 0;
+    color: #92a09b;
+    font-size: 0.85rem;
+}
+
+#evComparisonPage>main .content-next-step,
+#faqPage>main .content-next-step {
+    padding: 3.5rem 0;
+    border-top: 1px solid #dce4e1;
+    background: #f5f8f7;
+}
+
+#evComparisonPage>main .content-next-step-inner,
+#faqPage>main .content-next-step-inner {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#evComparisonPage>main .content-next-step h2,
+#faqPage>main .content-next-step h2 {
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.65rem, 2.6vw, 2.25rem);
+}
+
+#evComparisonPage>main .content-next-step p,
+#faqPage>main .content-next-step p {
+    margin-bottom: 0;
+}
+
+#faqPage>main .faq-search-section {
+    padding: 4.5rem 0 2rem;
+}
+
+#faqPage>main .faq-search-heading {
+    max-width: 720px;
+    margin-bottom: 2rem;
+}
+
+#faqPage>main .faq-search-heading>p:last-child {
+    font-size: 1.05rem;
+}
+
+#faqPage>main .faq-search-tools {
+    max-width: 980px;
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none !important;
+}
+
+#faqPage>main .faq-search-input {
+    border-bottom: 2px solid #26302d;
+}
+
+#faqPage>main .faq-search-input .input-group-text,
+#faqPage>main .faq-search-input .form-control {
+    min-height: 64px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    font-size: 1.08rem;
+    box-shadow: none;
+}
+
+#faqPage>main .faq-search-input .input-group-text {
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+
+#faqPage>main .faq-search-input:focus-within {
+    border-color: #23d28b;
+}
+
+#faqPage>main .faq-category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #dce4e1;
+}
+
+#faqPage>main .faq-category-tabs .category-filter {
+    position: relative;
+    padding: 0.55rem 0 0.8rem;
+    border: 0;
+    color: #5b6763;
+    background: transparent;
+    font-size: 0.95rem;
+    font-weight: 650;
+}
+
+#faqPage>main .faq-category-tabs .category-filter i {
+    display: none;
+}
+
+#faqPage>main .faq-category-tabs .category-filter::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    background: transparent;
+}
+
+#faqPage>main .faq-category-tabs .category-filter:hover,
+#faqPage>main .faq-category-tabs .category-filter:focus-visible,
+#faqPage>main .faq-category-tabs .category-filter.is-selected {
+    color: #15241f;
+}
+
+#faqPage>main .faq-category-tabs .category-filter.is-selected::after {
+    background: #23d28b;
+}
+
+#faqPage>main .faq-result-count {
+    margin: 1rem 0 0;
+    color: #697570;
+    font-size: 0.88rem;
+}
+
+#faqPage>main .faq-reading-section {
+    padding: 1.5rem 0 4.5rem;
+}
+
+#faqPage>main .faq-accordion {
+    max-width: 980px;
+}
+
+#faqPage>main .faq-accordion .accordion-item {
+    border: 0;
+    border-bottom: 1px solid #ccd6d2;
+    border-radius: 0;
+    background: transparent;
+}
+
+#faqPage>main .faq-accordion .accordion-button {
+    gap: 1rem;
+    padding: 1.35rem 0;
+    color: #17211e;
+    background: transparent;
+    font-size: clamp(1.05rem, 1.7vw, 1.18rem);
+    font-weight: 650;
+    line-height: 1.45;
+    box-shadow: none;
+}
+
+#faqPage>main .faq-accordion .accordion-button:not(.collapsed) {
+    color: #16885b;
+}
+
+#faqPage>main .faq-accordion .faq-question-icon {
+    display: inline-grid;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    color: #16885b;
+    font-size: 0.92rem;
+}
+
+#faqPage>main .faq-accordion .accordion-body {
+    max-width: 820px;
+    padding: 0 2.9rem 1.5rem;
+    color: #4f5c57;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+#faqPage>main .faq-empty-state {
+    max-width: 980px;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #ccd6d2;
+    text-align: left;
+}
+
+#faqPage>main .journey-weather-section {
+    padding: 4.5rem 0;
+    color: #d9e3df;
+    background: #14211d;
+}
+
+#faqPage>main .weather-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(420px, 1.15fr);
+    gap: clamp(3rem, 7vw, 7rem);
+    align-items: center;
+}
+
+#faqPage>main .weather-copy h2 {
+    margin-bottom: 1.2rem;
+    color: #fff;
+}
+
+#faqPage>main .weather-copy>p:not(.content-kicker) {
+    max-width: 540px;
+    font-size: 1rem;
+}
+
+#faqPage>main .weather-source,
+#faqPage>main .weather-source a {
+    color: #aebbb7;
+    font-size: 0.88rem;
+}
+
+#faqPage>main .weather-dashboard {
+    padding-left: clamp(2rem, 5vw, 4.5rem);
+    border-left: 1px solid #41504b;
+}
+
+#faqPage>main .weather-primary {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+#faqPage>main .weather-condition-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#faqPage>main .weather-icon-wrap {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border: 1px solid #53625d;
+    border-radius: 50%;
+    color: #23d28b;
+    font-size: 1.35rem;
+}
+
+#faqPage>main #weatherCondition {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#faqPage>main .weather-temperature-feature {
+    color: #23d28b;
+    font-size: clamp(3.4rem, 7vw, 5.3rem);
+    line-height: 1;
+    letter-spacing: -0.06em;
+}
+
+#faqPage>main .weather-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid #41504b;
+    border-bottom: 1px solid #41504b;
+}
+
+#faqPage>main .weather-metric {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1.25rem;
+    border-right: 1px solid #41504b;
+}
+
+#faqPage>main .weather-metric:last-child {
+    border-right: 0;
+}
+
+#faqPage>main .weather-metric i {
+    margin-bottom: 0.35rem;
+    color: #23d28b;
+}
+
+#faqPage>main .weather-metric span {
+    color: #aebbb7;
+    font-size: 0.88rem;
+}
+
+#faqPage>main .weather-metric strong {
+    color: #fff;
+    font-size: 1.08rem;
+}
+
+#faqPage>main #weatherStatus {
+    color: #aebbb7;
+    font-size: 0.88rem;
+}
+
+@media (max-width: 991.98px) {
+
+    #evComparisonPage>main .personalisation-layout,
+    #evComparisonPage>main .calculator-layout,
+    #faqPage>main .weather-layout {
+        grid-template-columns: 1fr;
+    }
+
+    #evComparisonPage>main .comparison-panel {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    #evComparisonPage>main .cost-result-panel,
+    #faqPage>main .weather-dashboard {
+        padding-top: 2.5rem;
+        padding-left: 0;
+        border-top: 1px solid #3a4743;
+        border-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    #evComparisonPage>.ev-hero,
+    #faqPage>.ev-hero {
+        min-height: 390px;
+    }
+
+    #evComparisonPage>.ev-hero::before,
+    #faqPage>.ev-hero::before {
+        background: linear-gradient(90deg, rgba(12, 20, 18, 0.9), rgba(12, 20, 18, 0.55));
+    }
+
+    #evComparisonPage>main .personalisation-layout,
+    #evComparisonPage>main .vehicle-comparison-section,
+    #evComparisonPage>main .cost-calculator-section,
+    #faqPage>main .faq-search-section,
+    #faqPage>main .faq-reading-section,
+    #faqPage>main .journey-weather-section {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    #evComparisonPage>main .personalisation-layout {
+        gap: 1.5rem;
+    }
+
+    #evComparisonPage>main .comparison-band {
+        grid-template-columns: 1fr;
+    }
+
+    #evComparisonPage>main .comparison-panel {
+        padding: 3rem 1.25rem;
+    }
+
+    #evComparisonPage>main .specification-section {
+        padding-top: 3rem;
+    }
+
+    #evComparisonPage>main .comparison-table {
+        min-width: 680px;
+    }
+
+    #evComparisonPage>main .content-next-step-inner,
+    #faqPage>main .content-next-step-inner {
+        display: block;
+    }
+
+    #evComparisonPage>main .content-next-step .content-primary-action,
+    #faqPage>main .content-next-step .content-primary-action {
+        margin-top: 1.25rem;
+    }
+
+    #faqPage>main .faq-category-tabs {
+        gap: 1.1rem;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    #faqPage>main .faq-category-tabs .category-filter {
+        flex: 0 0 auto;
+    }
+
+    #faqPage>main .weather-primary {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    #evComparisonPage>main .personalisation-controls,
+    #evComparisonPage>main .calculator-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    #evComparisonPage>main .supporting-costs,
+    #faqPage>main .weather-values {
+        grid-template-columns: 1fr;
+    }
+
+    #faqPage>main .weather-primary {
+        display: grid;
+    }
+
+    #faqPage>main .weather-metric {
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        border-right: 0;
+        border-bottom: 1px solid #41504b;
+    }
+
+    #faqPage>main .weather-metric:last-child {
+        border-bottom: 0;
+    }
+
+    #faqPage>main .faq-accordion .accordion-body {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    #evComparisonPage>main .content-primary-action,
+    #faqPage>main .content-primary-action {
+        transition: none;
+    }
+}
+
+/* ==========================================================================
+   NAVBAR COMPATIBILITY FIX FOR BOOTSTRAP PAGES
+   Keeps EV vs Petrol and FAQ consistent with the shared EVision navbar.
+   ========================================================================== */
+#evComparisonPage > .navbar,
+#faqPage > .navbar {
+    flex-wrap: nowrap;
+}
