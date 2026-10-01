@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About EV - EVision</title>
+
+    <!-- Libraries Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet">
+    <!-- Font Awesome for caret icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome 6 CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <h1>EVision</h1>
+
+        <div class="nav-menu">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About EV</a>
+
+            <a href="types.html">EV Types</a>
+
+            <a href="charging.html">Charging</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="ev-vs-petrol.html">EV VS Petrol</a>
+
+            <a href="faq.html">FAQ</a>
+
+
+            <!-- Models Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">
+                    Models
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="tesla.html">Tesla</a>
+                    <a href="proton.html">Proton</a>
+                    <a href="honda.html">Honda</a>
+                    <a href="byd.html">BYD</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Account Dropdown -->
+            <div class="dropdown account-dropdown">
+
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content account-menu">
+
+                    <!-- Before login -->
+                    <a href="login.html" id="loginLink">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a href="signup.html" id="signupLink">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+
+
+                    <!-- After login -->
+                    <div id="welcomeUser" class="account-user" style="display: none;">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span class="user-name" id="userName">
+                            </span>
+
+                            <small>Signed in</small>
+                        </div>
+
+                    </div>
+
+
+                    <a href="#" id="logoutLink" class="logout-item" style="display: none;">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Banner -->
+    <div class="banner-image-container">
+        <div class="banner-image fade">
+            <img src="img/ev4.jpg" alt="Drive into the FUTURE">
+            <div class="banner-text">All About EV</div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="explanation-container">
+        <div class="exp-header">
+            <h5 class="exp-subtitle">The Newest trend - EV</h5>
+            <h1 class="exp-title">Electric Car Basics</h1>
+        </div>
+        <div class="exp-content">
+            <div class="exp-img-box">
+                <img src="img/electric-car-components.jpg" alt="Electric vehicle battery system">
+            </div>
+            <div class="exp-text-box">
+                <p>Electric cars operate on a simple principle: instead of using gas to power an internal combustion
+                    engine, they use electricity to power an electric motor. The electric motor turns the wheels, which
+                    propels the car. Sounds simple, doesn’t it? Yet the world of electric cars extends far beyond this
+                    basic principle. The term "electric car" typically refers specifically to battery electric vehicles
+                    (BEVs) or
+                    all-electric cars, a type of electric vehicle (EV) that has an onboard rechargeable battery pack
+                    that can be plugged in and charged from the electric grid, or at home with solar panels, and the
+                    electricity stored on the vehicle is the only energy source that provides propulsion for the wheels.
+                    The term generally refers to highway-capable automobiles, but there are also low-speed electric
+                    vehicles with
+                    limitations in terms of weight, power, and maximum speed that are allowed to travel on certain
+                    public roads.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components 3x3 Grid Section -->
+    <section class="components-container">
+        <div class="components-header">
+            <h1 class="components-title">Electric Car Components</h1>
+        </div>
+
+        <div class="components-grid">
+            <!-- Card 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/e-machine.jpg" alt="e-machine">
+                        <h3>E-machine</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>This device powers a vehicle by converting electrical energy into mechanical energy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/bms.jpg" alt="bms">
+                        <h3>BMS</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>The battery pack is supervised by the battery management system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/charging-system.jpg" alt="charging-system">
+                        <h3>Charging System</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Fast and regular charging options are provided by the onboard charger in the charging system.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/inverter.jpg" alt="inverter">
+                        <h3>Inverter</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Regulates the e-Machine's speed and torque by converting DC to AC energy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/regenerative-braking.png" alt="regenerative-braking">
+                        <h3>Regenerative Braking</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Converts kinetic energy generated during braking into stored energy in the battery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/cooling-system.jpg" alt="cooling-system">
+                        <h3>Cooling System</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Regulates the temperature of the battery and components to guarantee efficiency.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & About -->
+            <div class="footer-col">
+                <h2 class="footer-brand">EVision</h2>
+                <p class="footer-desc">
+                    Driving towards a cleaner, sustainable future with modern electric vehicle insights and technology.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About EV</a></li>
+                    <li><a href="types.html">EV Types</a></li>
+                    <li><a href="charging.html">Charging</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a href="ev-vs-petrol.html">EV VS Petrol</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Top Models -->
+            <div class="footer-col">
+                <h3>Popular Models</h3>
+                <ul class="footer-links">
+                    <li><a href="tesla.html">Tesla</a></li>
+                    <li><a href="proton.html">Proton</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="byd.html">BYD</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> UTAR, Kampar</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (60) 123 4567 890</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@evision.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EVision. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="auth.js"></script>
+</body>
+
+</html>
